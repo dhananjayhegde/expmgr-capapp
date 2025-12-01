@@ -1,7 +1,7 @@
 {
   "name": "expmgr-app",
   "version": "1.0.0",
-  "description": "A simple CAP project.",
+  "description": "Expense Manager Application built with SAP CAP",
   "dependencies": {
     "@sap/cds": "^9",
     "express": "^4"
@@ -11,6 +11,14 @@
   },
   "scripts": {
     "start": "cds-serve"
+  },
+  "cds": {
+    "requires": {
+      "db": {
+          "kind": "sqlite",
+          "credentials": { "url": "db.sqlite" } 
+      }
+    }
   },
   "private": true
 }
