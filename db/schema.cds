@@ -65,11 +65,11 @@ entity JournalEntry : managed, cuid {
     paymentAccount : Association to PaymentAccount;
     assignedTags   : Composition of JournalEntryToTag
                          on assignedTags.journalEntry = $self;
-    sharedJournal  : Association to sharedJournal;
+    sharedJournal  : Association to SharedJournal;
 }
 
 entity SharedJournal : managed, cuid {
-    description : string(255);
+    description : String(255);
     entries     : Composition of many SharedJournalEntry
                       on entries.sharedJournal = $self;
 }
@@ -81,7 +81,7 @@ entity SharedJournalEntry : managed, cuid {
     amount         : Decimal(15, 2);
     currency       : Currency;
     payer          : Association to Account;
-    category       : Association to category;
+    category       : Association to Category;
     account        : Association to Account;
     paymentMode    : Association to PaymentMode;
     paymentAccount : Association to PaymentAccount;
