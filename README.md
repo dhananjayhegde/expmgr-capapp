@@ -21,6 +21,21 @@
 - SharedJournalEntry - an entry in a shared journal
 - ShareOfAccount - share of each account wihthin an entry in such journal
 
+# Services
+
+## Manage Journal Entry
+
+Personal journal entry for maintaining expenses of self
+
+## Manage Shared Journal Entry
+
+This is simmilar to splitwise when expenses are shared - thinking going on a trip with freinds.
+A new shared journal is created, expenses are entered there with share of each account and who paid.
+In the end, when the trip ends, click on "Settle"/"Post" to
+
+- Calculate who should pay to who how much to settle the accounts
+- Calcualte the expenses of self and post only that share of expenses to "Journal"
+
 ---
 
 # Getting Started
