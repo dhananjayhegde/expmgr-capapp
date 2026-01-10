@@ -1,0 +1,1 @@
+using ManageSharedJournalEntry as service from '../../srv/manage-shared-journal-entry';

@@ -1,0 +1,29 @@
+{
+  "generationParameters": {
+    "generationDate": "Sat Dec 13 2025 21:17:05 GMT+0530 (India Standard Time)",
+    "generatorPlatform": "Visual Studio Code",
+    "serviceType": "Local CAP",
+    "metadataFilename": "",
+    "serviceUrl": "http://localhost:4004/manage/journalentry/",
+    "appName": "managejournalentry",
+    "appTitle": "Manage Journal Entry",
+    "appDescription": "Manage Journal Entry",
+    "appNamespace": "com.dh.mng.journal.entry",
+    "ui5Theme": "sap_horizon",
+    "ui5Version": "1.143.2",
+    "enableCodeAssist": false,
+    "enableEslint": false,
+    "enableTypeScript": false,
+    "showMockDataInfo": false,
+    "generatorVersion": "1.20.0",
+    "template": "List Report Page V4",
+    "generatorName": "SAP Fiori Application Generator",
+    "entityRelatedConfig": [
+      {
+        "type": "Main Entity",
+        "value": "JournalEntry"
+      }
+    ],
+    "launchText": "To launch the generated app, start your CAP project:  and navigate to the following location in your browser:\n\nhttp://localhost:4004/managejournalentry/webapp/index.html"
+  }
+}

@@ -8,8 +8,8 @@ using {
 namespace com.dh.expmgr;
 
 type CategoryType : String(1) enum {
-    E = 'E';
-    I = 'I';
+    EXPENSE = 'E';
+    INCOME = 'I';
 };
 
 entity Category : sap.common.CodeList {
@@ -17,11 +17,11 @@ entity Category : sap.common.CodeList {
         type : CategoryType;
 }
 
-type AccountType  : String(50) enum {
-    EXPENSE = 'Eexpense';
-    PERSONAL = 'Personal';
-    LOAN = 'Loan';
-    INVESTMENT = 'Investment';
+type AccountType  : String(1) enum {
+    EXPENSE = 'E';
+    PERSONAL = 'P';
+    LOAN = 'L';
+    INVESTMENT = 'I';
 };
 
 entity Account : managed, cuid {
@@ -63,7 +63,7 @@ entity JournalEntry : managed, cuid {
     account        : Association to Account;
     paymentMode    : Association to PaymentMode;
     paymentAccount : Association to PaymentAccount;
-    assignedTags   : Composition of JournalEntryToTag
+    assignedTags   : Composition of many JournalEntryToTag
                          on assignedTags.journalEntry = $self;
     sharedJournal  : Association to SharedJournal;
 }
